@@ -1,0 +1,301 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cara Membuat Kopi yang Benar</title>
+
+    <style>
+        /* ---------- RESET & VARIABEL ---------- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --cokelat: #795548;
+            --cokelat-tua: #4e342e;
+            --krem: #f5eee6;
+            --kertas: #ffffff;
+            --teks: #30231e;
+            --teks-lembut: #6b5b53;
+            --garis: #e0d2c5;
+            --gelap: #2d201b;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: var(--krem);
+            color: var(--teks);
+            line-height: 1.65;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        a:focus-visible {
+            outline: 3px solid #d7b899;
+            outline-offset: 3px;
+        }
+
+        /* ---------- HEADER / NAVBAR ---------- */
+        header {
+            background: var(--cokelat);
+            color: #fff;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .logo {
+            font-size: 1.4rem;
+            font-weight: 700;
+            letter-spacing: 0.02em;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+            padding: 0.25rem 0;
+            border-bottom: 2px solid transparent;
+            transition: border-color 0.2s;
+        }
+
+        nav a:hover {
+            border-bottom-color: #fff;
+        }
+
+        /* ---------- KONTEN UTAMA ---------- */
+        main {
+            flex: 1;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2.5rem 1.5rem;
+        }
+
+        .intro {
+            background: var(--kertas);
+            border-left: 6px solid var(--cokelat);
+            border-radius: 6px;
+            padding: 1.75rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .intro h1 {
+            font-size: 2.2rem;
+            line-height: 1.2;
+            color: var(--cokelat-tua);
+            margin-bottom: 0.75rem;
+        }
+
+        .intro p {
+            max-width: 70ch;
+            color: var(--teks-lembut);
+        }
+
+        .judul-bagian {
+            font-size: 1.5rem;
+            margin-bottom: 1.25rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--garis);
+        }
+
+        /* ---------- CSS GRID: 5 KARTU ---------- */
+        .grid-kartu {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .kartu {
+            background: var(--kertas);
+            border: 1px solid var(--garis);
+            border-top: 4px solid var(--cokelat);
+            border-radius: 6px;
+            padding: 1.25rem;
+        }
+
+        .kartu h3 {
+            font-size: 1.1rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .kartu ul,
+        .kartu ol {
+            padding-left: 1.25rem;
+            color: var(--teks-lembut);
+        }
+
+        .kartu li + li {
+            margin-top: 0.4rem;
+        }
+
+        /* ---------- FOOTER ---------- */
+        footer {
+            background: var(--gelap);
+            color: #e0d2c5;
+            padding: 1.5rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            font-size: 0.9rem;
+        }
+
+        footer ul {
+            list-style: none;
+            display: flex;
+            gap: 1.25rem;
+        }
+
+        footer a {
+            color: #e0d2c5;
+        }
+
+        /* ---------- RESPONSIVE ---------- */
+        @media (max-width: 768px) {
+            header,
+            footer {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .intro h1 {
+                font-size: 1.8rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                padding: 1rem;
+            }
+
+            nav ul {
+                gap: 1rem;
+            }
+
+            main {
+                padding: 1.5rem 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER + NAVBAR -->
+    <header>
+        <div class="logo">Dunia Kopi</div>
+
+        <nav aria-label="Navigasi utama">
+            <ul>
+                <li><a href="#tentang">Tentang</a></li>
+                <li><a href="#resep">Bahan</a></li>
+                <li><a href="#penyajian">Penyajian</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- KONTEN UTAMA -->
+    <main>
+        <section class="intro" id="tentang">
+            <h1>Cara Membuat Kopi yang Benar</h1>
+
+            <p>
+                Kopi adalah minuman yang dibuat dari biji kopi yang telah
+                disangrai dan dihaluskan menjadi bubuk. Kopi memiliki aroma
+                khas dan rasa yang beragam, mulai dari pahit hingga sedikit
+                asam.
+            </p>
+        </section>
+
+        <section id="resep">
+            <h2 class="judul-bagian">Bahan dan Cara Membuat Kopi</h2>
+
+            <div class="grid-kartu">
+
+                <!-- KARTU 1 -->
+                <article class="kartu">
+                    <h3>Bahan Utama</h3>
+                    <ul>
+                        <li>2 sendok teh kopi bubuk</li>
+                        <li>200 ml air bersih</li>
+                        <li>2 sendok teh gula pasir</li>
+                        <li>Gula tambahan sesuai selera</li>
+                    </ul>
+                </article>
+
+                <!-- KARTU 2 -->
+                <article class="kartu">
+                    <h3>Alat yang Dibutuhkan</h3>
+                    <ul>
+                        <li>1 cangkir</li>
+                        <li>1 sendok</li>
+                        <li>1 buah panci</li>
+                        <li>Kompor untuk memanaskan air</li>
+                    </ul>
+                </article>
+
+                <!-- KARTU 3 -->
+                <article class="kartu">
+                    <h3>Persiapan Bahan</h3>
+                    <ol>
+                        <li>Siapkan semua bahan dan alat yang diperlukan.</li>
+                        <li>Pastikan cangkir dan sendok dalam keadaan bersih.</li>
+                        <li>Ukur kopi bubuk sebanyak 2 sendok teh.</li>
+                        <li>Siapkan gula sesuai seleraa.</li>
+                    </ol>
+                </article>
+
+                <!-- KARTU 4 -->
+                <article class="kartu">
+                    <h3>Proses Penyeduhan</h3>
+                    <ol>
+                        <li>Panaskan 200 ml air hingga mendidih.</li>
+                        <li>Diamkan air sebentar agar suhunya sedikit turun.</li>
+                        <li>Masukkan kopi bubuk dan gula ke dalam cangkir.</li>
+                        <li>Tuangkan air panas secara perlahan.</li>
+                        <li>Aduk hingga kopi dan gula tercampur rata.</li>
+                    </ol>
+                </article>
+
+                <!-- KARTU 5 -->
+                <article class="kartu" id="penyajian">
+                    <h3>Penyelesaian dan Penyajian</h3>
+                    <ol>
+                        <li>Diamkan kopi sebentar agar kopi cukup dingin dan ampas mengendap.</li>
+                        <li>Sruputt kopi dan tambahkan gula jika perlu.</li>
+                        <li>Sajikan kopi di tempat yang nyaman.</li>
+                        <li>Kopi siap di nikmati.</li>
+                    </ol>
+                </article>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Dunia Kopi | Cara Membuat Kopi</p>
+
+        <ul>
+            <li><a href="#tentang">Kembali ke atas</a></li>
+        </ul>
+    </footer>
+
+</body>
+</html>
