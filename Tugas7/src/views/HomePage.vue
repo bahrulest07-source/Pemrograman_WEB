@@ -7,22 +7,22 @@ import { products } from '../data/products'
   <div class="page-content">
     <section class="hero">
       <div class="hero-copy">
-        <p class="eyebrow"><span class="eyebrow-dot"></span> Segarkan suasana terbaikmu</p>
-        <h1>Minuman soda,<br /><span>cerahnya hari.</span></h1>
+        <p class="eyebrow"><span class="eyebrow-dot"></span> Teman terbaik untuk setiap waktu</p>
+        <h1>Kopi pilihan,<br /><span>hangatnya hari.</span></h1>
         <p class="hero-description">
-          Pilihan soda dingin berkilau untuk menemani obrolan, waktu santai,
-          atau suasana bersenang-senang bersama teman.
+          Nikmati espresso, cappuccino, caramel macchiato, dan kopi dingin
+          pilihan untuk menemani obrolan maupun waktu santai.
         </p>
-        <a class="hero-cta" href="#katalog">Pilih soda <span aria-hidden="true">↓</span></a>
+        <a class="hero-cta" href="#katalog">Pilih kopi <span aria-hidden="true">↓</span></a>
       </div>
       <div class="hero-art" aria-hidden="true">
         <div class="hero-sun"></div>
         <div class="hero-display">
-          <span class="hero-object hero-object-one">🍋</span>
-          <span class="hero-object hero-object-two">🥤</span>
-          <span class="hero-object hero-object-three">🫐</span>
+          <span class="hero-object hero-object-one">☕</span>
+          <span class="hero-object hero-object-two">🥛</span>
+          <span class="hero-object hero-object-three">🧊</span>
         </div>
-        <span class="hero-note">Disajikan dingin, penuh warna ♡</span>
+        <span class="hero-note">Diseduh hangat, penuh rasa ♡</span>
       </div>
       <div class="hero-index"><span>01</span> / 04</div>
     </section>
@@ -31,9 +31,9 @@ import { products } from '../data/products'
       <div class="section-heading">
         <div>
           <p class="eyebrow">Menu andalan kami</p>
-          <h2>Pilih sodamu</h2>
+          <h2>Pilih kopimu</h2>
         </div>
-        <span class="product-count">{{ products.length }} pilihan soda</span>
+        <span class="product-count">{{ products.length }} pilihan kopi</span>
       </div>
 
       <div class="product-grid">
@@ -44,8 +44,8 @@ import { products } from '../data/products'
     <section class="promise-banner">
       <span class="promise-icon" aria-hidden="true">✦</span>
       <div>
-        <strong>Soda dingin, suasana makin seru.</strong>
-        <p>Disiapkan segar saat dipesan untuk melepas dahaga.</p>
+        <strong>Kopi segar, suasana makin nyaman.</strong>
+          <p>Diseduh saat dipesan untuk menjaga aroma dan rasa terbaik.</p>
       </div>
       <span class="promise-arrow" aria-hidden="true">↗</span>
     </section>

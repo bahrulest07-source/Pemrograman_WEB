@@ -8,9 +8,9 @@ const cart = useCartStore()
 <template>
   <div class="site-shell">
     <header class="site-header">
-      <RouterLink class="brand" to="/" aria-label="Soda Senja, beranda">
-        <span class="brand-mark">🥤</span>
-        <span>soda<span class="brand-light">senja</span></span>
+      <RouterLink class="brand" to="/" aria-label="Senja Kopi, beranda">
+        <span class="brand-mark">☕</span>
+        <span>senja<span class="brand-light">kopi</span></span>
       </RouterLink>
 
       <nav class="main-nav" aria-label="Navigasi utama">
@@ -28,10 +28,10 @@ const cart = useCartStore()
 
     <footer class="site-footer">
       <span class="brand brand-footer">
-        <span class="brand-mark">🥤</span>
-        <span>soda<span class="brand-light">senja</span></span>
+        <span class="brand-mark">☕</span>
+        <span>senja<span class="brand-light">kopi</span></span>
       </span>
-      <span>Segarnya warna, bahagianya setiap teguk.</span>
+      <span>Aroma hangat, nyaman setiap tegukan.</span>
     </footer>
   </div>
 </template>

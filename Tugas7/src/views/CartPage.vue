@@ -93,7 +93,7 @@ const formatPrice = (price) =>
       <div class="empty-cart-icon" aria-hidden="true">🛍️</div>
       <p class="eyebrow">Masih ada banyak pilihan</p>
       <h2>Keranjangmu masih kosong.</h2>
-      <p>Yuk, temukan sesuatu yang pas untuk hari-harimu.</p>
+      <p>Yuk, temukan kopi yang pas untuk hari-harimu.</p>
       <RouterLink class="hero-cta" to="/">Lihat katalog <span aria-hidden="true">→</span></RouterLink>
     </section>
   </div>

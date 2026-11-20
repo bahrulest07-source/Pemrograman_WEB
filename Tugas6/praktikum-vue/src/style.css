@@ -1,15 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap');
-
 :root {
-  font-family: 'DM Sans', 'Segoe UI', sans-serif;
+  font-family: system-ui, sans-serif;
   color: #302d27;
   background: #f7f5ef;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-optical-sizing: auto;
-  font-weight: 400;
 }
 
 * {
@@ -17,20 +11,159 @@
 }
 
 body {
+  margin: 0;
   min-width: 320px;
   min-height: 100vh;
+}
+
+#app {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px 16px;
+}
+
+.buku-catatan {
+  width: min(680px, 100%);
+  padding: 28px;
+  border: 1px solid #ddd7ca;
+  border-radius: 14px;
+  background: #fffefa;
+  box-shadow: 0 10px 28px rgba(74, 67, 53, 0.10);
+}
+
+.buku-catatan h1 {
+  margin: 0 0 20px;
+  color: #302d27;
+  text-align: center;
+  font-size: 32px;
+}
+
+.form-buku {
+  display: grid;
+  gap: 12px;
+  padding: 16px;
+  border-radius: 10px;
+  background: #f7f5ef;
+  border: 1px solid #ddd7ca;
+}
+
+.form-buku {
+  grid-template-columns: 1fr 180px;
+}
+
+.form-buku label {
+  display: grid;
+  gap: 6px;
+  color: #625d52;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.form-buku input[type='text'],
+.form-buku select {
+  width: 100%;
+  height: 42px;
+  padding: 0 10px;
+  border: 1px solid #cfc8ba;
+  border-radius: 8px;
+  outline: none;
+  background: #fffefa;
+  color: #302d27;
+}
+
+.form-buku input:focus,
+.form-buku select:focus {
+  border-color: #8d795c;
+}
+
+.form-buku .status-baca {
+  display: flex;
+  align-items: center;
+  align-self: end;
+  height: 42px;
+  gap: 8px;
+}
+
+.form-buku input[type='checkbox'],
+.daftar-buku input[type='checkbox'] {
+  width: 16px;
+  height: 16px;
+  accent-color: #8d795c;
+}
+
+.form-buku button {
+  grid-column: 1 / -1;
+  height: 42px;
+  border: 0;
+  border-radius: 8px;
+  background: #8d795c;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.ringkasan {
+  margin: 16px 0 10px;
+  padding: 10px;
+  border-radius: 8px;
+  background: #ece7db;
+  color: #625d52;
+  text-align: center;
+}
+
+.daftar-buku {
+  display: grid;
+  gap: 8px;
   margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
-button,
-input,
-select {
-  font: inherit;
+.daftar-buku li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px;
+  border: 1px solid #ddd7ca;
+  border-radius: 8px;
+  background: #fffefa;
 }
 
-button:focus-visible,
-input:focus-visible,
-select:focus-visible {
-  outline-color: #8d795c;
-  outline-offset: 3px;
+.daftar-buku li.selesai strong {
+  color: #858178;
+  text-decoration: line-through;
+}
+
+.daftar-buku li div {
+  display: grid;
+  gap: 4px;
+}
+
+.daftar-buku li span {
+  color: #858178;
+  font-size: 13px;
+}
+
+.daftar-buku li label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+}
+
+@media (max-width: 620px) {
+  #app {
+    align-items: start;
+    padding: 12px;
+  }
+
+  .buku-catatan {
+    padding: 18px 14px;
+  }
+
+  .form-buku {
+    grid-template-columns: 1fr;
+  }
 }

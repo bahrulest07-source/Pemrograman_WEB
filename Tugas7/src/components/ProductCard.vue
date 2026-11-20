@@ -22,7 +22,7 @@ const formatPrice = (price) =>
     <div class="product-art" :class="`art-${product.color}`">
       <span v-if="product.badge" class="product-badge">{{ product.badge }}</span>
       <span class="product-emoji" role="img" :aria-label="product.name">{{ product.icon }}</span>
-      <span class="art-caption">SODA SENJA · {{ product.category }}</span>
+      <span class="art-caption">SENJA KOPI · {{ product.category }}</span>
     </div>
 
     <div class="product-info">

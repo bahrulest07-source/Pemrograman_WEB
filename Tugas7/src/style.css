@@ -12,7 +12,7 @@
   font-weight: 400;
   --ink: #2e261f;
   --muted: #85867e;
-  --green: #1788a3;
+  --green: #8a5a44;
   --line: #e9e7df;
   --paper: #fbfaf7;
 }
@@ -140,7 +140,7 @@ main {
   overflow: hidden;
   display: flex;
   align-items: center;
-  background: #dff4f7;
+  background: #efe5d8;
   border-radius: 4px;
 }
 
@@ -234,7 +234,7 @@ main {
   top: 20px;
   left: 50%;
   transform: translateX(-50%);
-  background: #78d7e8;
+  background: #d7bd9d;
   border-radius: 50%;
 }
 
@@ -247,9 +247,9 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  background: #16879b;
+  background: #72503d;
   border-radius: 4px 4px 0 0;
-  box-shadow: 0 -7px 0 #45bdd0;
+  box-shadow: 0 -7px 0 #b78d69;
   transform: perspective(500px) rotateY(-7deg);
 }
 
@@ -348,20 +348,20 @@ main {
   overflow: hidden;
 }
 
-.art-cola {
-  background: #ead9c8;
+.art-espresso {
+  background: #d9c3ac;
 }
 
-.art-lemon {
-  background: #e9edc7;
+.art-cappuccino {
+  background: #eadfcf;
 }
 
-.art-berry {
-  background: #e2d8ef;
+.art-macchiato {
+  background: #dfb98e;
 }
 
-.art-orange {
-  background: #f7dfb5;
+.art-coldbrew {
+  background: #c9d5d3;
 }
 
 .product-emoji {
@@ -473,7 +473,7 @@ main {
   align-items: center;
   gap: 16px;
   color: #fff;
-  background: #16879b;
+  background: #72503d;
 }
 
 .promise-icon {
@@ -481,7 +481,7 @@ main {
   height: 34px;
   display: grid;
   place-items: center;
-  color: #16879b;
+  color: #72503d;
   background: #d8f3f5;
   border-radius: 50%;
 }

@@ -1,5 +1,5 @@
 <script setup>
-import BukuCatatan from './BukuCatatan.vue'
+import BukuCatatan from './components/BukuCatatan.vue'
 </script>
 
 <template>
