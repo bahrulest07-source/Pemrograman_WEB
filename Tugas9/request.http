@@ -1,0 +1,13 @@
+### Ambil semua inventaris
+GET http://localhost:3000/api/inventaris
+
+### Tambah inventaris
+POST http://localhost:3000/api/inventaris
+Content-Type: application/json
+
+{
+  "nama": "keyboard",
+  "kategori": "Elektronik",
+  "jumlah": 17,
+  "kondisi": "Buruk"
+}
